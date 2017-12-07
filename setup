@@ -6,3 +6,5 @@ sudo apt-get install python-pygments
 
 
 sudo rsync -arv ./home/ ~/
+rm ~/.vim/bundle
+ln -sfn ~/.vimpkg/bundle ~/.vim/bundle
