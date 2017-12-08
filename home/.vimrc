@@ -16,6 +16,7 @@ nmap <silent> <M-Up> :wincmd k
 nmap <silent> <M-Down> :wincmd j
 let &cpo=s:cpo_save
 unlet s:cpo_save
+set autoindent
 set background=dark
 set backspace=indent,eol,start
 set fileencodings=ucs-bom,utf-8,default,latin1
@@ -26,4 +27,3 @@ set ruler
 set runtimepath=~/.vim,~/.vim/bundle/nerdtree,~/.vim/bundle/pathogen,~/.vim/bundle/tagbar,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim74,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 " vim: set ft=vim :
-syntax on
