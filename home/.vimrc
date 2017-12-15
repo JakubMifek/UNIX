@@ -27,3 +27,4 @@ set ruler
 set runtimepath=~/.vim,~/.vim/bundle/nerdtree,~/.vim/bundle/pathogen,~/.vim/bundle/tagbar,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim74,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 " vim: set ft=vim :
+syntax on

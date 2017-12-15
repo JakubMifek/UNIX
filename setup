@@ -4,7 +4,14 @@ sudo apt-get install rsync
 sudo apt-get install vim
 sudo apt-get install python-pygments
 
+curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
 
 sudo rsync -arv ./home/ ~/
 rm ~/.vim/bundle
 ln -sfn ~/.vimpkg/bundle ~/.vim/bundle
+
+echo 'export PATH=$PATH:~/.vimpkg/bin' >> ~/.bash_profile
+echo 'source ~/.bash_profile' >> ~/.bashrc
+source ~/.bashrc
+
+apt-vim install -y https://github.com/scrooloose/nerdtree.git
