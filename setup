@@ -1,10 +1,12 @@
 #!/bin/bash
 
+# Install apps
+
 sudo apt-get install rsync
 sudo apt-get install vim
 sudo apt-get install python-pygments
 
-curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
+# Sync settings
 
 sudo rsync -arv ./home/ ~/
 rm ~/.vim/bundle
@@ -12,6 +14,13 @@ ln -sfn ~/.vimpkg/bundle ~/.vim/bundle
 
 echo 'export PATH=$PATH:~/.vimpkg/bin' >> ~/.bash_profile
 echo 'source ~/.bash_profile' >> ~/.bashrc
-source ~/.bashrc
+source ~/.bashr
+
+git config --global user.email "jakubmifek@gmail.com"
+git config --global user.name "Jakub Mifek"
+
+# Download and install plugins
+
+url -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh
 
 apt-vim install -y https://github.com/scrooloose/nerdtree.git
